@@ -1,17 +1,20 @@
 $(document).ready(function()  {
   var $top  = $('.slider').height();
-  console.log($top);
+  var bottom_of_element = $(".about").offset().top + $(".about").outerHeight();
+  console.log(bottom_of_element)
+
+  
   $(window).scroll(function(event) {
     var y = $(this).scrollTop();
     //About--Header
-    if(y >= 200){
+    if(y >= 300){
       $("#about").fadeIn(1000).addClass('slide-in-left');
         }
-    if(y >= 250){
+    if(y >= 350){
       $("#about-bar").delay(1000).fadeIn(1000).addClass('slide-in-left');
         }
     //About--Hexagon
-    if(y >= 450){
+    if(y >= 550){
       $( "div.hexagon" ).delay(1000).each(function(i) {
         $(this).delay(200*i).fadeIn();
       });
