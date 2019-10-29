@@ -145,14 +145,14 @@ body{
     width:100%;
     background-size: cover;
     background-image: url('../images/developer.png');
-    height:1000px;
+    height:700px;
 }
 .bar-icon {
     display: none;
 }
 nav{
     background-color: #252f31;
-    height:80px;
+    height:50px;
     z-index: 1000;
     border-bottom: 5px solid #FFB6C1;	
 }
@@ -162,7 +162,7 @@ nav{
     font-size: 30px;
     color:#fff;
     margin-right: 90px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .shrink{
     position:fixed ;
