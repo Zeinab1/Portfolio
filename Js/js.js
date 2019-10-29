@@ -2,7 +2,6 @@ $(document).ready(function()  {
   var $top  = $('.slider').height();
   var bottom_of_element = $(".about").offset().top + $(".about").outerHeight();
   
-
   
   $(window).scroll(function(event) {
     var y = $(this).scrollTop();
@@ -13,9 +12,7 @@ $(document).ready(function()  {
     $('.fill:eq(1)').animate({width:'60%'},500);
     $('.fill:eq(2)').animate({width:'85%'},500);
   }
-    if(x <= 375){
-      
-    }
+   
     //About--Header
     if(y >= 300 & x > 375){
       $("#about" ).fadeIn(1000).addClass('slide-in-left');
@@ -60,31 +57,36 @@ $(document).ready(function()  {
     else{
       $('nav').removeClass('shrink');
     }
-   
-   
   });
  
-  //clicked bar
+  //navbar for mobile
   $(".bar-wrap").click(function(){
     $(".panel").slideToggle();
   });
-  //clicked link
+
   $(".page-link").click(function(){
     $(".page-link").removeClass("active");
     $(this).addClass("active");
 
   });
+
   $(".about").click(function() {
     $('html, body').animate({
-        scrollTop: $("#about").offset().top
+        scrollTop: $("#header-about").offset().top
     }, 500);
-    $(".panel").slideUp();
+    if(x <= 375){
+      $(".panel").slideUp();
+    }  
 });
+
 $(".portfolio").click(function() {
   $('html, body').animate({
       scrollTop: $("#portfolio").offset().top
   }, 500);
-  $(".panel").slideUp();
+  if(x <= 375){
+    $(".panel").slideUp();
+  }
+ 
 });
 //portfolio
 $(".filter").click(function(){
