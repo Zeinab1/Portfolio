@@ -152,14 +152,14 @@ body{
 }
 nav{
     background-color: #252f31;
-    height:50px;
+    height:40px;
     z-index: 1000;
     border-bottom: 5px solid #FFB6C1;	
 }
 .page-link{
     float:left;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     color:#fff;
     margin-right: 90px;
     margin-top: 10px;
